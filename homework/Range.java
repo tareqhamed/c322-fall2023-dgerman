@@ -4,4 +4,7 @@ public class Range {
     this.start = start;
     this.stop = stop;
   }
+  public char ross() {
+    return (char) (start + (int) (Math.random() * (stop - start +  1)));
+  }
 }
