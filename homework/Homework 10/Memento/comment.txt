@@ -1,0 +1,4 @@
+Originator: The HogwartsHappening class acts as the originator. It creates a memento containing a snapshot of its current internal state and can also use such a memento to restore its state.
+Memento: The HogwartsHappening.Memento inner class is the memento. It is a private static class within HogwartsHappening which contains the state of the HogwartsHappening object.
+Caretaker: The Client class acts as the caretaker. It is responsible for keeping the memento but does not modify it or examine its contents directly.
+In this code, the story of Buckbeak and the events around it are captured as different states (mementos) and stored in a map (savedStates). The code can then restore these states from the mementos, representing a timeline where events can be "rewound" and altered, reflecting the Memento Pattern's capability to revert to previous states. This is particularly relevant in applications where the ability to undo or roll back to a previous state is crucial.
