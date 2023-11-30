@@ -1,0 +1,1 @@
+In the updated code, AdapterForSafeTeaching implements the TeachingDADA interface and adapts the behavior of an oldTeacher (instance of TeacherForDADA) by adding new teaching methods before delegating to the original methods of oldTeacher.
