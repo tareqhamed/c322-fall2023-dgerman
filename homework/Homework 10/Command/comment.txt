@@ -1,0 +1,6 @@
+Command Interface: The Command interface defines the action and can be implemented by various concrete command classes (e.g., ProtectHarryPotter).
+Concrete Command: ProtectHarryPotter is a concrete command class that implements the Command interface. It defines a binding between a set of actions (protecting Harry Potter) and the receiver (the character assigned to the task).
+Client: The Client class (in this case, Client itself) is responsible for creating a ConcreteCommand and setting its receiver.
+Invoker: The Invoker class (here, represented by Invoker) asks the command to carry out the request. The Invoker doesn't know anything about a concrete command; it just knows how to execute a command (Command interface).
+Receiver: The characters like Squib, Wizard, etc., act as receivers. Each receiver has the knowledge required to carry out the command.
+In this scenario, different characters (like Arabella Figg, Mundungus Fletcher, Mad-Eye Moody, etc.) are set up with specific tasks (such as ProtectHarryPotter). The invoker then executes these commands. This pattern is particularly useful for scenarios where commands need to be issued, queued, logged, or undone, providing a high level of flexibility and decoupling between the command issuer and the executor.
