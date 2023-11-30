@@ -1,0 +1,5 @@
+State Interface: DADA_State interface defines the state-specific behaviors. Each state class like DADA_Year1 implements this interface.
+Concrete State: The DADA_Year1 class is a concrete state, implementing the DADA_State interface. It encapsulates all behaviors associated with a specific state, such as the teacher's personality traits, background, and termination conditions for the year.
+Context: The context (not shown in this snippet) would be a class that maintains an instance of a DADA_State subclass and delegates state-specific requests to the current state object. It would have a method to switch states, likely accepting a new DADA_State instance.
+State Transition: The method changeState in DADA_Year1 signifies a state transition, where it returns a new instance of DADA_Year2, demonstrating how the context can transition from one state to another.
+Encapsulation of State-Dependent Behavior: Each state class encapsulates the state-dependent behaviors and properties, like the teacher, teacherPersonalityTraits, and terminationConditions.
