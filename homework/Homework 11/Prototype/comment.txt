@@ -1,0 +1,10 @@
+Prototype Manager: The PrototypeManagerAndDuplicator class acts as a prototype manager. It likely maintains a registry of prototype objects (Dragon instances in this case) and is responsible for duplicating these prototypes when requested.
+Prototype Instances: Different types of dragons, such as "Chinese Fireball" and "Hungarian Horntail", are prototypes. Each dragon type has its own attributes and behaviors.
+Cloning Process: The method ptm.conjure is used to create a new Dragon instance. This method likely invokes a cloning operation on a prototype object, creating a new instance with the same attributes as the prototype.
+Modification of Cloned Objects: After cloning, it's possible to modify the newly created objects without affecting the original prototypes. This is demonstrated when d3, a new dragon of type "Chinese Fireball", is modified by adding "monkeys" to its diet, which does not affect the original d1 dragon of the same type.
+Independent Objects: The fact that changes to d3 do not affect d1 confirms that the prototype pattern creates independent objects through cloning, rather than just creating references to the same object.
+The Prototype Pattern is advantageous in scenarios where objects of a class are expensive to create from scratch, and it's more efficient to copy an existing instance. This pattern also allows for adding or modifying properties of the cloned objects, providing flexibility in object creation. In the given code, the pattern is applied in a context where different types of dragons are required, and each new dragon can be efficiently created by cloning an existing prototype.
+
+
+
+
