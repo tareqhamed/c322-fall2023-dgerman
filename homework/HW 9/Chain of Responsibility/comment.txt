@@ -1,0 +1,5 @@
+The Java code illustrates the Chain of Responsibility design pattern, where multiple objects handle a request along a chain. Each class (like Headmaster, DeputyHeadmaster) extends Adjudicator, implementing the Violations interface, and links to a successor. This setup allows a request to be passed along until handled, demonstrating the pattern's principle of decoupling request senders and receivers. The Test class demonstrates forming this chain, highlighting how objects pass requests along until resolved.
+
+
+
+
