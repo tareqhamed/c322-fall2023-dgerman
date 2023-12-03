@@ -1,0 +1,9 @@
+The code you provided demonstrates the Singleton design pattern in Java. The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. Here's what I understood from the code:
+
+UnauthorizedInstanceException is a custom exception class that extends the Exception class. It is used to handle exceptions related to unauthorized creation of multiple instances of the Singleton class.
+The Singleton class has a static boolean variable instanceExists that keeps track of whether an instance of the class has been created or not.
+The constructor of the Singleton class throws an UnauthorizedInstanceException if an instance already exists (instanceExists is true). This prevents the creation of multiple instances of the Singleton class.
+In the main method of the TestSingleton class, two attempts to create instances of the Singleton class are made.
+The first attempt (obj_1) is successful, and it creates a unique instance of the Singleton class. If an exception were to occur, it would be caught and its message would be printed.
+The second attempt (obj_2) tries to create another instance of the Singleton class, which causes an exception (UnauthorizedInstanceException) to be thrown since the Singleton pattern ensures that only one instance is allowed.
+Overall, the code effectively demonstrates the Singleton pattern by preventing the unauthorized creation of multiple instances of the Singleton class and raising an exception if such an attempt is made.
